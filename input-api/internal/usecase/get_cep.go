@@ -8,19 +8,6 @@ type CEPInputDTO struct {
 	CEP string `json:"cep"`
 }
 
-type CEPOutputDTO struct {
-	CEP         string `json:"cep"`
-	Logradouro  string `json:"logradouro"`
-	Complemento string `json:"complemento"`
-	Bairro      string `json:"bairro"`
-	Localidade  string `json:"localidade"`
-	UF          string `json:"uf"`
-	IBGE        string `json:"ibge"`
-	GIA         string `json:"gia"`
-	DDD         string `json:"ddd"`
-	SIAFI       string `json:"siafi"`
-}
-
 type WeatherOutputDTO struct {
 	City       string  `json:"city"`
 	Celcius    float64 `json:"temp_C"`
