@@ -35,6 +35,8 @@ func (w *GetWeatherUseCase) Execute(input WeatherInputDTO) (WeatherOutputDTO, er
 		return WeatherOutputDTO{}, errors.New("missing input: Localidade")
 	}
 
+	input.ApiKey = "3b2a37d432bb971bbe7e04c62553c0b6"
+
 	if input.ApiKey == "" {
 		return WeatherOutputDTO{}, errors.New("missing input: ApiKey")
 	}
